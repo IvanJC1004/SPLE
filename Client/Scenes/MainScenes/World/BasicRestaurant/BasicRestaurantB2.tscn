@@ -1,0 +1,2517 @@
+[gd_scene load_steps=132 format=2]
+
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/MainScenes/World/BasicRestaurant/BasicRestaurantB2.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/SPL Background.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Dialogue1B2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Pressed.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Hover.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIElements/Image/Translate Icon.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Normal.png" type="Texture" id=8]
+[ext_resource path="res://Assets/UIElements/Image/ES Flag.png" type="Texture" id=9]
+[ext_resource path="res://Assets/UIElements/Image/EN Flag.png" type="Texture" id=10]
+[ext_resource path="res://Assets/UIElements/Image/Hover Translate Icon.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Chef.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/MainScenes/World/BasicRestaurant/TranslatorButtonDialog.gd" type="Script" id=13]
+[ext_resource path="res://Scenes/MainScenes/World/BasicRestaurant/Camera2D.gd" type="Script" id=14]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Table Selected.png" type="Texture" id=15]
+[ext_resource path="res://Assets/UIElements/Image/Music Icon Normal.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Ham.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Tomatoe Sauce.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Clock Under.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Flour Normal.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Pineapple.png" type="Texture" id=21]
+[ext_resource path="res://Assets/UIElements/Image/Music Icon Pressed.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Dough.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Cheese Pressed.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Box Selected.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Box Normal.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Tomatoes Normal.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Trash Normal.png" type="Texture" id=28]
+[ext_resource path="res://Assets/UIElements/Image/Music Icon Hover.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Clock Progress.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Table Hover.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Basic Restaurant.png" type="Texture" id=32]
+[ext_resource path="res://Scenes/MainScenes/Menu/AudioButton.gd" type="Script" id=33]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Tomatoes Sauce Hover.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Tomatoes Sauce Normal.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Oven Hover.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Sounds/Music/funky-groove-3383.mp3" type="AudioStream" id=37]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Trash Hover.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Box Hover.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Particle1-floaty_64.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Kitchen Table Normal.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Trash Pressed.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Dough Pressed.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Kitchen Table Hover.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Chicken.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Dough Normal.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Oven Normal.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Fridge Icon.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Kitchen Table Pressed.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Cheese.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Dough Hover.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Table Normal.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Basic Restaurant Up.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Clock Over.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Pepperoni.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cheese Normal.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Cheese Hover.png" type="Texture" id=72]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Tomatoes Sauce Pressed.png" type="Texture" id=73]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Pizza Oven Selected.png" type="Texture" id=74]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Mushroom.png" type="Texture" id=75]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Chicken Normal.png" type="Texture" id=76]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Chicken Hover.png" type="Texture" id=77]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Chicken Normal.png" type="Texture" id=79]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Cheese Normal.png" type="Texture" id=80]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Pineapple Normal.png" type="Texture" id=82]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Chef Icon Pressed.png" type="Texture" id=83]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Remove Normal.png" type="Texture" id=84]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Pepperoni Pressed.png" type="Texture" id=86]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Pineapple Pressed.png" type="Texture" id=87]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Chef Icon Hover.png" type="Texture" id=88]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Deliver Normal.png" type="Texture" id=89]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Remove Pressed.png" type="Texture" id=90]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pepperoni Normal.png" type="Texture" id=92]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Ham Normal.png" type="Texture" id=95]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Mushroom Hover.png" type="Texture" id=97]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Pineapple Hover.png" type="Texture" id=98]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pineapple Normal.png" type="Texture" id=100]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Ham Pressed.png" type="Texture" id=101]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Checked Normal.png" type="Texture" id=102]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Checked Hover.png" type="Texture" id=103]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Remove Hover.png" type="Texture" id=104]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Hide.png" type="Texture" id=105]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Checked Pressed.png" type="Texture" id=106]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/post-it.png" type="Texture" id=107]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Mushroom Pressed.png" type="Texture" id=108]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Deliver Pressed.png" type="Texture" id=109]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Chef Icon Normal.png" type="Texture" id=110]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/WrongOrderIcon.png" type="Texture" id=111]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Pepperoni Hover.png" type="Texture" id=112]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Pepperoni Normal.png" type="Texture" id=113]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Ham Hover.png" type="Texture" id=114]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Mushroom Normal.png" type="Texture" id=115]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Chicken Pressed.png" type="Texture" id=116]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Ham Normal.png" type="Texture" id=117]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Burned.png" type="Texture" id=118]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Pizza Hover.png" type="Texture" id=119]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Pizza Pressed.png" type="Texture" id=121]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Cut Mushroom Normal.png" type="Texture" id=122]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Order Background.png" type="Texture" id=123]
+[ext_resource path="res://Assets/Images/Levels/Ingredients/Pizza/Cooked.png" type="Texture" id=124]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/SPL Black Background.png" type="Texture" id=125]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Deliver Hover.png" type="Texture" id=126]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/CorrectOrderIcon.png" type="Texture" id=127]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Dialogue3.tscn" type="PackedScene" id=130]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Dialogue2.tscn" type="PackedScene" id=131]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Quiz1.tscn" type="PackedScene" id=132]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="CanvasItemMaterial" id=7]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 7
+particles_anim_loop = false
+
+[sub_resource type="ParticlesMaterial" id=8]
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 30.0
+flag_disable_z = true
+direction = Vector3( 50, 50, 0 )
+gravity = Vector3( 0, 100, 0 )
+orbit_velocity = 0.01
+orbit_velocity_random = 0.0
+angle = 1.0
+angle_random = 1.0
+anim_speed = 1.0
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 120
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 200
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 50
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 52
+outline_size = 4
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 52
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=24]
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=25]
+size = 24
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="BasicRestaurant" type="Node"]
+script = ExtResource( 2 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 125 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Front" type="NinePatchRect" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 512, 300 )
+texture = ExtResource( 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CameraBody2D" type="KinematicBody2D" parent="NinePatchRect/Front"]
+position = Vector2( 501.933, 280.183 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera2D" type="Camera2D" parent="NinePatchRect/Front/CameraBody2D"]
+position = Vector2( 10.788, 17.3456 )
+current = true
+process_mode = 0
+script = ExtResource( 14 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NinePatchRect/Front/CameraBody2D"]
+shape = SubResource( 1 )
+
+[node name="Up" type="NinePatchRect" parent="NinePatchRect/Front"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -298.861
+margin_right = 512.0
+margin_bottom = 301.139
+texture = ExtResource( 66 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chefs" type="Control" parent="NinePatchRect/Front/Up"]
+anchor_left = 0.480469
+anchor_top = 0.466667
+anchor_right = 0.519531
+anchor_bottom = 0.533333
+margin_bottom = -3.05176e-05
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Chef" parent="NinePatchRect/Front/Up/Chefs" instance=ExtResource( 12 )]
+anchor_left = -0.38756
+anchor_top = -6.8985
+anchor_right = 2.90844
+anchor_bottom = -4.4345
+margin_right = 692.16
+margin_bottom = 517.44
+rect_scale = Vector2( 0.16, 0.16 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/Front/Up/Chefs/Chef"]
+anchor_left = 0.601
+anchor_top = 1.028
+anchor_right = 0.601
+anchor_bottom = 1.028
+margin_left = -105.469
+margin_top = -53.6469
+margin_right = 105.531
+margin_bottom = 53.3531
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Chefs/Chef/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_right = 51.0
+margin_bottom = 23.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = SubResource( 2 )
+text = "Chef"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chef2" parent="NinePatchRect/Front/Up/Chefs" instance=ExtResource( 12 )]
+anchor_left = 2.00229
+anchor_top = -6.96193
+anchor_right = 5.29829
+anchor_bottom = -4.49793
+margin_right = 692.16
+margin_bottom = 517.44
+rect_scale = Vector2( 0.16, 0.16 )
+typeChef = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/Front/Up/Chefs/Chef2"]
+anchor_left = 0.601
+anchor_top = 1.028
+anchor_right = 0.601
+anchor_bottom = 1.028
+margin_left = -105.469
+margin_top = -53.6469
+margin_right = 105.531
+margin_bottom = 53.3531
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Chefs/Chef2/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_right = 51.0
+margin_bottom = 23.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = SubResource( 2 )
+text = "Chef"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chef3" parent="NinePatchRect/Front/Up/Chefs" instance=ExtResource( 12 )]
+anchor_left = 3.75289
+anchor_top = -0.525943
+anchor_right = 7.04889
+anchor_bottom = 1.93806
+margin_right = 692.16
+margin_bottom = 517.44
+rect_scale = Vector2( 0.16, 0.16 )
+typeChef = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/Front/Up/Chefs/Chef3"]
+anchor_left = 0.601
+anchor_top = 1.028
+anchor_right = 0.601
+anchor_bottom = 1.028
+margin_left = -105.469
+margin_top = -53.6469
+margin_right = 105.531
+margin_bottom = 53.3531
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Chefs/Chef3/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_right = 51.0
+margin_bottom = 23.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = SubResource( 2 )
+text = "Chef"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="Control" parent="NinePatchRect/Front/Up"]
+margin_top = -0.132433
+margin_right = 40.0
+margin_bottom = 39.8676
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="NinePatchRect/Front/Up/Buttons"]
+autostart = true
+
+[node name="PizzaTable" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons"]
+anchor_left = 17.5652
+anchor_top = 0.455473
+anchor_right = 19.0097
+anchor_bottom = 4.86547
+margin_right = 50.22
+margin_bottom = 138.6
+rect_scale = Vector2( 0.535, 0.56 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 65 )
+texture_pressed = ExtResource( 15 )
+texture_hover = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="PizzaCompleted" type="Control" parent="NinePatchRect/Front/Up/Buttons/PizzaTable"]
+anchor_left = -0.0902608
+anchor_top = 1.03709
+anchor_right = 0.798628
+anchor_bottom = 1.31645
+margin_left = -0.251831
+margin_top = -3.68204
+margin_right = -1.25183
+margin_bottom = 0.317932
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Dough" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TomatoeSauce" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Cheese" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 61 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Chicken" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 53 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ham" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pepperoni" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 68 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Mushroom" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 75 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pineapple" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ButtonPizza" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted"]
+visible = false
+margin_left = 12.017
+margin_top = 6.254
+margin_right = 366.017
+margin_bottom = 341.254
+rect_scale = Vector2( 0.235, 0.235 )
+mouse_default_cursor_shape = 2
+texture_pressed = ExtResource( 121 )
+texture_hover = ExtResource( 119 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/PizzaTable"]
+anchor_left = 1.542
+anchor_top = 0.618
+anchor_right = 1.542
+anchor_bottom = 0.618
+margin_left = -63.536
+margin_top = -14.9614
+margin_right = 63.464
+margin_bottom = 15.0386
+custom_fonts/font = SubResource( 3 )
+text = "PIZZATABLE1"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pizza Oven" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons"]
+anchor_left = 16.15
+anchor_top = 10.9
+anchor_right = 19.2129
+anchor_bottom = 13.07
+margin_right = 106.485
+margin_bottom = 68.2
+rect_scale = Vector2( 0.535, 0.56 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 57 )
+texture_pressed = ExtResource( 74 )
+texture_hover = ExtResource( 36 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/Front/Up/Buttons/Pizza Oven"]
+margin_left = 73.1888
+margin_top = 145.66
+margin_right = 263.189
+margin_bottom = 173.66
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Pizza Oven/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 4 )
+text = "PIZZAOVEN1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pizza Box" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons"]
+anchor_left = 14.2
+anchor_top = 11.025
+anchor_right = 16.1629
+anchor_bottom = 13.279
+margin_right = 106.485
+margin_bottom = 70.84
+rect_scale = Vector2( 0.535, 0.56 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 25 )
+texture_hover = ExtResource( 42 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/Front/Up/Buttons/Pizza Box"]
+margin_left = 25.9825
+margin_top = 144.157
+margin_right = 215.983
+margin_bottom = 172.157
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Pizza Box/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 5 )
+text = "PIZZABOX1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trash" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons"]
+anchor_left = 8.87038
+anchor_top = 0.563134
+anchor_right = 10.0073
+anchor_bottom = 2.08913
+margin_right = 39.525
+margin_bottom = 47.96
+rect_scale = Vector2( 0.535, 0.56 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 28 )
+texture_pressed = ExtResource( 46 )
+texture_hover = ExtResource( 41 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Trash"]
+anchor_left = 0.437
+anchor_top = -0.067
+anchor_right = 0.437
+anchor_bottom = -0.067
+margin_left = -37.0133
+margin_top = -19.8412
+margin_right = 36.9867
+margin_bottom = 19.9291
+custom_fonts/font = SubResource( 6 )
+text = "TRASH1"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Deliver" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons"]
+anchor_left = 8.35138
+anchor_top = 11.0853
+anchor_right = 9.88738
+anchor_bottom = 12.6213
+margin_right = 450.56
+margin_bottom = 450.56
+rect_scale = Vector2( 0.12, 0.12 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 89 )
+texture_pressed = ExtResource( 109 )
+texture_hover = ExtResource( 126 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CorrectOrder" type="Particles2D" parent="NinePatchRect/Front/Up/Buttons/Deliver"]
+visible = false
+material = SubResource( 7 )
+position = Vector2( 260.859, 240.026 )
+scale = Vector2( 7, 7 )
+process_material = SubResource( 8 )
+texture = ExtResource( 43 )
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Deliver/CorrectOrder"]
+margin_left = -63.4971
+margin_top = -4.40063
+margin_right = 77.5029
+margin_bottom = 19.5994
+custom_fonts/font = SubResource( 9 )
+text = "CORRECTORDER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CorrectOrderTimer" type="Timer" parent="NinePatchRect/Front/Up/Buttons/Deliver/CorrectOrder"]
+wait_time = 2.0
+one_shot = true
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Deliver/CorrectOrder"]
+margin_left = -119.159
+margin_top = -38.7117
+margin_right = 392.841
+margin_bottom = 473.288
+rect_scale = Vector2( 0.14, 0.14 )
+texture = ExtResource( 127 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WrongLabel" type="Label" parent="NinePatchRect/Front/Up/Buttons/Deliver"]
+visible = false
+anchor_left = -0.256683
+anchor_top = 0.341574
+anchor_right = 1.38785
+anchor_bottom = 0.640402
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "WRONGORDER"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="WrongtOrderTimer" type="Timer" parent="NinePatchRect/Front/Up/Buttons/Deliver/WrongLabel"]
+wait_time = 2.0
+one_shot = true
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Deliver/WrongLabel"]
+anchor_left = -0.559897
+anchor_top = -1.3344
+anchor_right = 0.0481792
+anchor_bottom = 2.01201
+margin_left = 3.05176e-05
+margin_top = -1.52588e-05
+texture = ExtResource( 111 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/Front/Up/Buttons/Deliver"]
+margin_top = -154.0
+margin_right = 573.0
+margin_bottom = -10.0
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Deliver/NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -222.896
+margin_top = -93.4054
+margin_right = 222.896
+margin_bottom = 93.4054
+custom_fonts/font = SubResource( 11 )
+text = "DELIVER1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OrderBackground" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons"]
+margin_top = 0.132433
+margin_right = 512.0
+margin_bottom = 512.132
+rect_scale = Vector2( 0.42, 1.065 )
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menus" type="Control" parent="NinePatchRect/Front/Up/Buttons"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 0.132433
+margin_bottom = 0.132435
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PizzaOvenInventory" type="NinePatchRect" parent="NinePatchRect/Front/Up/Buttons/Menus"]
+visible = false
+anchor_left = 19.52
+anchor_top = 10.0242
+anchor_right = 21.1825
+anchor_bottom = 12.1242
+margin_right = 66.5
+margin_bottom = 84.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 57 )
+region_rect = Rect2( 28.6011, 63.1393, 4.21632, 3.68928 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CancelButton" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory"]
+anchor_left = 0.63221
+anchor_top = 0.0263695
+anchor_right = 0.933228
+anchor_bottom = 0.124831
+margin_top = 9.53674e-07
+margin_right = 471.965
+margin_bottom = 471.04
+rect_scale = Vector2( 0.08, 0.08 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory"]
+anchor_left = 0.150376
+anchor_top = 0.327381
+anchor_right = 0.864662
+anchor_bottom = 0.952381
+margin_bottom = -7.0
+custom_constants/vseparation = 20
+custom_constants/hseparation = 10
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Inventory1" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer"]
+margin_right = 95.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PizzaOven" type="Control" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon"]
+anchor_left = -0.114943
+anchor_top = -0.0344828
+anchor_right = 1.06897
+anchor_bottom = 1.03448
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Dough" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TomatoeSauce" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Cheese" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 61 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Chicken" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 53 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ham" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pepperoni" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 68 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Mushroom" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 75 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pineapple" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Cooked" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 124 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Burned" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+rect_scale = Vector2( 0.235, 0.235 )
+texture = ExtResource( 118 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ButtonPizzaOven1" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven"]
+anchor_left = 0.11667
+anchor_top = 0.0672473
+anchor_right = 0.92434
+anchor_bottom = 0.913753
+margin_left = 0.982941
+margin_top = 1.7643e-05
+margin_right = 271.793
+margin_bottom = 256.275
+rect_scale = Vector2( 0.235, 0.235 )
+mouse_default_cursor_shape = 2
+texture_pressed = ExtResource( 119 )
+texture_hover = ExtResource( 121 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Oven1Progress" type="TextureProgress" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1"]
+visible = false
+anchor_left = 1.05759
+anchor_top = 0.948725
+anchor_right = 1.56285
+anchor_bottom = 1.61754
+margin_right = 552.0
+margin_bottom = 730.681
+rect_min_size = Vector2( 60, 60 )
+rect_scale = Vector2( 0.08, 0.08 )
+max_value = 5.0
+texture_under = ExtResource( 19 )
+texture_over = ExtResource( 30 )
+texture_progress = ExtResource( 67 )
+fill_mode = 4
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="PizzaTable" type="NinePatchRect" parent="NinePatchRect/Front/Up/Buttons/Menus"]
+visible = false
+anchor_left = 0.35
+anchor_top = 0.325
+anchor_right = 44.7375
+anchor_bottom = 23.1875
+margin_right = 83.5
+margin_bottom = 229.5
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 57 )
+region_rect = Rect2( 28.6011, 63.1393, 4.21632, 3.68928 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CancelButton" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable"]
+anchor_left = 0.954602
+anchor_top = 0.011874
+anchor_right = 0.990541
+anchor_bottom = 0.0516796
+margin_top = 9.53674e-07
+margin_right = 471.965
+margin_bottom = 471.04
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="UpInventory" type="GridContainer" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable"]
+anchor_left = 0.349342
+anchor_top = 0.106643
+anchor_right = 0.977701
+anchor_bottom = 0.229021
+margin_right = -314.0
+margin_bottom = -40.0
+rect_scale = Vector2( 1.4, 1.4 )
+custom_constants/vseparation = 0
+custom_constants/hseparation = 20
+columns = 7
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Inventory1" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory"]
+margin_right = 95.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="TomatoesSauceI1" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory1"]
+anchor_left = 0.0105263
+anchor_right = 0.988211
+anchor_bottom = 0.972947
+margin_right = 939.12
+margin_bottom = 934.57
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 35 )
+texture_pressed = ExtResource( 73 )
+texture_hover = ExtResource( 34 )
+texture_disabled = ExtResource( 73 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory1/TomatoesSauceI1"]
+anchor_left = 0.81739
+anchor_top = 0.742198
+anchor_right = 0.938514
+anchor_bottom = 0.990494
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory1/TomatoesSauceI1"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 13 )
+text = "TOMATOES1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory2" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory"]
+margin_left = 115.0
+margin_right = 210.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="CheeseI2" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory2"]
+anchor_left = 0.0210526
+anchor_top = 0.0105263
+anchor_right = 6.55084
+anchor_bottom = 6.92537
+margin_top = 9.53674e-07
+margin_right = 397.67
+margin_bottom = 363.09
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 80 )
+texture_pressed = ExtResource( 24 )
+texture_hover = ExtResource( 72 )
+texture_disabled = ExtResource( 24 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory2/CheeseI2"]
+anchor_left = 0.81739
+anchor_top = 0.742198
+anchor_right = 0.938514
+anchor_bottom = 0.990494
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory2/CheeseI2"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 14 )
+text = "CHEESE1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory3" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory"]
+margin_left = 230.0
+margin_right = 325.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="ChickenI3" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory3"]
+anchor_left = 0.0210526
+anchor_top = 0.0105263
+anchor_right = 6.55084
+anchor_bottom = 6.92537
+margin_top = 9.53674e-07
+margin_right = 397.67
+margin_bottom = 363.09
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 79 )
+texture_pressed = ExtResource( 116 )
+texture_hover = ExtResource( 77 )
+texture_disabled = ExtResource( 116 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory3/ChickenI3"]
+anchor_left = 0.81739
+anchor_top = 0.742198
+anchor_right = 0.938514
+anchor_bottom = 0.990494
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory3/ChickenI3"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 15 )
+text = "CHICKEN1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory4" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory"]
+margin_left = 345.0
+margin_right = 440.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="PepperoniI4" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory4"]
+anchor_left = 0.0210526
+anchor_top = 0.0105263
+anchor_right = 6.55084
+anchor_bottom = 6.92537
+margin_top = 9.53674e-07
+margin_right = 397.67
+margin_bottom = 363.09
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 113 )
+texture_pressed = ExtResource( 86 )
+texture_hover = ExtResource( 112 )
+texture_disabled = ExtResource( 86 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory4/PepperoniI4"]
+anchor_left = 0.81739
+anchor_top = 0.742198
+anchor_right = 0.938514
+anchor_bottom = 0.990494
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory4/PepperoniI4"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 16 )
+text = "Pepperoni"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory5" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory"]
+margin_left = 460.0
+margin_right = 555.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="HamI5" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory5"]
+anchor_left = 0.0210526
+anchor_top = 0.0105263
+anchor_right = 6.55084
+anchor_bottom = 6.92537
+margin_top = 9.53674e-07
+margin_right = 397.67
+margin_bottom = 363.09
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 95 )
+texture_pressed = ExtResource( 101 )
+texture_hover = ExtResource( 114 )
+texture_disabled = ExtResource( 101 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory5/HamI5"]
+anchor_left = 0.81739
+anchor_top = 0.742198
+anchor_right = 0.938514
+anchor_bottom = 0.990494
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory5/HamI5"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 17 )
+text = "HAM1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory6" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory"]
+margin_left = 575.0
+margin_right = 670.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="MushroomI6" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory6"]
+anchor_left = 0.0210526
+anchor_top = 0.0105263
+anchor_right = 6.55084
+anchor_bottom = 6.92537
+margin_top = 9.53674e-07
+margin_right = 397.67
+margin_bottom = 363.09
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 122 )
+texture_pressed = ExtResource( 108 )
+texture_hover = ExtResource( 97 )
+texture_disabled = ExtResource( 108 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory6/MushroomI6"]
+anchor_left = 0.81739
+anchor_top = 0.742198
+anchor_right = 0.938514
+anchor_bottom = 0.990494
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory6/MushroomI6"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 18 )
+text = "MUSHROOMS1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory7" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory"]
+margin_left = 690.0
+margin_right = 785.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="PineappleI7" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory7"]
+anchor_left = 0.0210526
+anchor_top = 0.0105263
+anchor_right = 6.55084
+anchor_bottom = 6.92537
+margin_top = 9.53674e-07
+margin_right = 397.67
+margin_bottom = 363.09
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 82 )
+texture_pressed = ExtResource( 87 )
+texture_hover = ExtResource( 98 )
+texture_disabled = ExtResource( 87 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory7/PineappleI7"]
+anchor_left = 0.81739
+anchor_top = 0.742198
+anchor_right = 0.938514
+anchor_bottom = 0.990494
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory7/PineappleI7"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 19 )
+text = "PINEAPPLE1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DoughPlace" type="GridContainer" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable"]
+anchor_left = 0.0485992
+anchor_top = 0.363636
+anchor_right = 0.268839
+anchor_bottom = 0.897028
+margin_right = -171.2
+margin_bottom = -271.2
+rect_scale = Vector2( 1.8, 1.8 )
+custom_constants/vseparation = 20
+custom_constants/hseparation = 20
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Inventory1" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace"]
+margin_right = 95.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="DoughI1" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+margin_right = 939.0
+margin_bottom = 915.0
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 56 )
+texture_pressed = ExtResource( 47 )
+texture_hover = ExtResource( 64 )
+texture_disabled = ExtResource( 47 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory1/DoughI1"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 20 )
+text = "FLOUR1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory2" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace"]
+margin_left = 115.0
+margin_right = 210.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="DoughI2" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+margin_right = 939.0
+margin_bottom = 915.0
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 56 )
+texture_pressed = ExtResource( 47 )
+texture_hover = ExtResource( 64 )
+texture_disabled = ExtResource( 47 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory2/DoughI2"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 20 )
+text = "FLOUR1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory3" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace"]
+margin_top = 115.0
+margin_right = 95.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="DoughI3" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+margin_right = 939.0
+margin_bottom = 915.0
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 56 )
+texture_pressed = ExtResource( 47 )
+texture_hover = ExtResource( 64 )
+texture_disabled = ExtResource( 47 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory3/DoughI3"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 20 )
+text = "FLOUR1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory4" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace"]
+margin_left = 115.0
+margin_top = 115.0
+margin_right = 210.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="DoughI4" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+margin_right = 939.0
+margin_bottom = 915.0
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 56 )
+texture_pressed = ExtResource( 47 )
+texture_hover = ExtResource( 64 )
+texture_disabled = ExtResource( 47 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory4/DoughI4"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 20 )
+text = "FLOUR1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory5" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace"]
+margin_top = 230.0
+margin_right = 95.0
+margin_bottom = 325.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="DoughI5" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+margin_right = 939.0
+margin_bottom = 915.0
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 56 )
+texture_pressed = ExtResource( 47 )
+texture_hover = ExtResource( 64 )
+texture_disabled = ExtResource( 47 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory5/DoughI5"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 20 )
+text = "FLOUR1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory6" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace"]
+margin_left = 115.0
+margin_top = 230.0
+margin_right = 210.0
+margin_bottom = 325.0
+rect_min_size = Vector2( 95, 95 )
+texture = ExtResource( 58 )
+expand = true
+
+[node name="DoughI6" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+margin_right = 939.0
+margin_bottom = 915.0
+rect_scale = Vector2( 0.09, 0.09 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 56 )
+texture_pressed = ExtResource( 47 )
+texture_hover = ExtResource( 64 )
+texture_disabled = ExtResource( 47 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory6/DoughI6"]
+anchor_right = 1.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 20 )
+text = "FLOUR1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Table" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 679.0
+margin_top = 415.0
+margin_right = -546.0
+margin_bottom = -170.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 45 )
+texture_pressed = ExtResource( 60 )
+texture_hover = ExtResource( 51 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dough" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TomatoeSauce" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 18 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Cheese" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 61 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Chicken" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 53 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ham" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pepperoni" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 68 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Mushroom" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 75 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pineapple" type="TextureRect" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table"]
+visible = false
+anchor_left = 0.126496
+anchor_top = 0.0679785
+anchor_right = 0.998291
+anchor_bottom = 0.926654
+texture = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Yes" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable"]
+margin_left = 1427.49
+margin_top = 833.66
+margin_right = 1939.49
+margin_bottom = 1345.66
+rect_scale = Vector2( 0.2, 0.2 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 102 )
+texture_pressed = ExtResource( 106 )
+texture_hover = ExtResource( 103 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No" type="TextureButton" parent="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable"]
+margin_left = 1565.74
+margin_top = 836.556
+margin_right = 2077.74
+margin_bottom = 1348.56
+rect_scale = Vector2( 0.2, 0.2 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 84 )
+texture_pressed = ExtResource( 90 )
+texture_hover = ExtResource( 104 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Orders" type="Control" parent="NinePatchRect/Front"]
+margin_left = -8.3484
+margin_top = -2.33936
+margin_right = 26.6516
+margin_bottom = 34.6606
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Note" type="TextureRect" parent="NinePatchRect/Front/Orders"]
+visible = false
+anchor_left = 0.801808
+anchor_top = 0.534539
+anchor_right = 5.28181
+anchor_bottom = 5.01454
+margin_right = 332.8
+margin_bottom = 332.8
+rect_scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 107 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Title" type="Label" parent="NinePatchRect/Front/Orders/Note"]
+anchor_right = 0.996094
+anchor_bottom = 0.160156
+custom_fonts/font = SubResource( 21 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PIZZAORDER0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ingredients" type="Label" parent="NinePatchRect/Front/Orders/Note"]
+anchor_left = 0.00390625
+anchor_top = 0.164063
+anchor_right = 1.0
+anchor_bottom = 0.267578
+custom_fonts/font = SubResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.596078, 0.768627, 1, 1 )
+text = "INGREDIENTSORDER"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Order0" type="VBoxContainer" parent="NinePatchRect/Front/Orders/Note"]
+anchor_left = 0.0175781
+anchor_top = 0.302734
+anchor_right = 0.988281
+anchor_bottom = 0.984375
+margin_left = -2.86102e-06
+margin_top = -1.52588e-05
+margin_bottom = -3.05176e-05
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ingredient1" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order0"]
+margin_right = 496.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient1"]
+margin_left = 120.0
+margin_right = 322.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLOUR1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient1"]
+margin_left = 326.0
+margin_right = 376.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="Ingredient2" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order0"]
+margin_top = 71.0
+margin_right = 496.0
+margin_bottom = 138.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient2"]
+margin_left = 60.0
+margin_right = 382.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TOMATOES1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient2"]
+margin_left = 386.0
+margin_right = 436.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 27 )
+expand = true
+
+[node name="Ingredient3" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order0"]
+margin_top = 142.0
+margin_right = 496.0
+margin_bottom = 209.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient3"]
+margin_left = 109.0
+margin_right = 333.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHEESE1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient3"]
+margin_left = 337.0
+margin_right = 387.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 70 )
+expand = true
+
+[node name="Ingredient4" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order0"]
+margin_top = 213.0
+margin_right = 496.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient4"]
+margin_left = 33.0
+margin_right = 409.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MUSHROOMS1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order0/Ingredient4"]
+margin_left = 413.0
+margin_right = 463.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 115 )
+expand = true
+
+[node name="Order1" type="VBoxContainer" parent="NinePatchRect/Front/Orders/Note"]
+visible = false
+anchor_left = 0.0175781
+anchor_top = 0.302734
+anchor_right = 0.988281
+anchor_bottom = 0.984375
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ingredient1" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order1"]
+margin_right = 496.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient1"]
+margin_left = 120.0
+margin_right = 322.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLOUR1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient1"]
+margin_left = 326.0
+margin_right = 376.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="Ingredient2" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order1"]
+margin_top = 71.0
+margin_right = 496.0
+margin_bottom = 138.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient2"]
+margin_left = 60.0
+margin_right = 382.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TOMATOES1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient2"]
+margin_left = 386.0
+margin_right = 436.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 27 )
+expand = true
+
+[node name="Ingredient3" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order1"]
+margin_top = 142.0
+margin_right = 496.0
+margin_bottom = 209.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient3"]
+margin_left = 109.0
+margin_right = 333.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHEESE1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient3"]
+margin_left = 337.0
+margin_right = 387.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 70 )
+expand = true
+
+[node name="Ingredient4" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order1"]
+margin_top = 213.0
+margin_right = 496.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient4"]
+margin_left = 147.0
+margin_right = 295.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HAM1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order1/Ingredient4"]
+margin_left = 299.0
+margin_right = 349.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 117 )
+expand = true
+
+[node name="Order2" type="VBoxContainer" parent="NinePatchRect/Front/Orders/Note"]
+visible = false
+anchor_left = 0.0175781
+anchor_top = 0.302734
+anchor_right = 0.988281
+anchor_bottom = 0.984375
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ingredient1" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order2"]
+margin_right = 496.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient1"]
+margin_left = 120.0
+margin_right = 322.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLOUR1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient1"]
+margin_left = 326.0
+margin_right = 376.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="Ingredient2" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order2"]
+margin_top = 71.0
+margin_right = 496.0
+margin_bottom = 138.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient2"]
+margin_left = 60.0
+margin_right = 382.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TOMATOES1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient2"]
+margin_left = 386.0
+margin_right = 436.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 27 )
+expand = true
+
+[node name="Ingredient3" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order2"]
+margin_top = 142.0
+margin_right = 496.0
+margin_bottom = 209.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient3"]
+margin_left = 109.0
+margin_right = 333.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHEESE1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient3"]
+margin_left = 337.0
+margin_right = 387.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 70 )
+expand = true
+
+[node name="Ingredient4" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order2"]
+margin_top = 213.0
+margin_right = 496.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient4"]
+margin_left = 91.0
+margin_right = 351.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHICKEN1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient4"]
+margin_left = 355.0
+margin_right = 405.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 76 )
+expand = true
+
+[node name="Ingredient5" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order2"]
+margin_top = 284.0
+margin_right = 496.0
+margin_bottom = 351.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient5"]
+margin_left = 75.0
+margin_right = 366.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PINEAPPLE1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order2/Ingredient5"]
+margin_left = 370.0
+margin_right = 420.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 100 )
+expand = true
+
+[node name="Order3" type="VBoxContainer" parent="NinePatchRect/Front/Orders/Note"]
+visible = false
+anchor_left = 0.0175781
+anchor_top = 0.302734
+anchor_right = 0.988281
+anchor_bottom = 0.984375
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ingredient1" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order3"]
+margin_right = 496.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient1"]
+margin_left = 120.0
+margin_right = 322.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLOUR1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient1"]
+margin_left = 326.0
+margin_right = 376.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="Ingredient2" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order3"]
+margin_top = 71.0
+margin_right = 496.0
+margin_bottom = 138.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient2"]
+margin_left = 60.0
+margin_right = 382.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TOMATOES1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient2"]
+margin_left = 386.0
+margin_right = 436.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 27 )
+expand = true
+
+[node name="Ingredient3" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order3"]
+margin_top = 142.0
+margin_right = 496.0
+margin_bottom = 209.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient3"]
+margin_left = 109.0
+margin_right = 333.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHEESE1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient3"]
+margin_left = 337.0
+margin_right = 387.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 70 )
+expand = true
+
+[node name="Ingredient4" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order3"]
+margin_top = 213.0
+margin_right = 496.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient4"]
+margin_left = 93.0
+margin_right = 349.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Pepperoni"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient4"]
+margin_left = 353.0
+margin_right = 403.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 92 )
+expand = true
+
+[node name="Ingredient5" type="HBoxContainer" parent="NinePatchRect/Front/Orders/Note/Order3"]
+margin_top = 284.0
+margin_right = 496.0
+margin_bottom = 351.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="Label" type="Label" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient5"]
+margin_left = 147.0
+margin_right = 295.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HAM1"
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/Front/Orders/Note/Order3/Ingredient5"]
+margin_left = 299.0
+margin_right = 349.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 50, 50 )
+texture = ExtResource( 117 )
+expand = true
+
+[node name="mouseTexture" type="TextureRect" parent="NinePatchRect/Front"]
+visible = false
+margin_right = 653.0
+margin_bottom = 566.0
+rect_scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 27 )
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NinePatchRect/Front"]
+anims/Part1IDLE = SubResource( 24 )
+
+[node name="Dialogue" parent="NinePatchRect/Front" instance=ExtResource( 4 )]
+positionMax = 13
+
+[node name="Dialogue2" parent="NinePatchRect/Front" instance=ExtResource( 131 )]
+visible = false
+anchor_left = 0.83081
+anchor_top = 0.406029
+anchor_right = 0.998779
+anchor_bottom = 0.999362
+positionMin = 13
+positionMax = 25
+typeDialog = 2
+
+[node name="HideButton" type="TextureButton" parent="NinePatchRect/Front/Dialogue2"]
+margin_left = 49.3486
+margin_top = 170.077
+margin_right = 561.349
+margin_bottom = 682.077
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 105 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dialogue3" parent="NinePatchRect/Front" instance=ExtResource( 130 )]
+visible = false
+positionMin = 25
+positionMax = 30
+typeDialog = 2
+
+[node name="AudioButton" type="TextureButton" parent="NinePatchRect/Front"]
+anchor_left = 0.967562
+anchor_top = 0.172409
+anchor_right = 0.967682
+anchor_bottom = 0.172409
+margin_left = -25.8389
+margin_top = -25.6613
+margin_right = 486.038
+margin_bottom = 486.339
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 22 )
+texture_hover = ExtResource( 29 )
+script = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="NinePatchRect/Front/AudioButton"]
+stream = ExtResource( 37 )
+volume_db = -12.0
+autoplay = true
+
+[node name="TranslatorButton" type="TextureButton" parent="NinePatchRect/Front"]
+process_priority = 1
+anchor_left = 0.938409
+anchor_top = 0.014165
+anchor_right = 0.988409
+anchor_bottom = 0.0994983
+margin_right = 460.8
+margin_bottom = 460.8
+rect_min_size = Vector2( 40, 40 )
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 11 )
+texture_disabled = ExtResource( 11 )
+stretch_mode = 4
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TranslatortemList" type="ItemList" parent="NinePatchRect/Front/TranslatorButton"]
+visible = false
+anchor_left = -1.175
+anchor_top = 1.14
+anchor_right = -1.175
+anchor_bottom = 1.14
+margin_left = -614.398
+margin_top = -609.353
+margin_right = -434.398
+margin_bottom = -514.353
+rect_min_size = Vector2( 180, 95 )
+rect_scale = Vector2( 10, 10 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 25 )
+items = [ "Español", ExtResource( 9 ), false, "English", ExtResource( 10 ), false ]
+icon_scale = 0.6
+fixed_icon_size = Vector2( 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChefButton" type="TextureButton" parent="NinePatchRect/Front"]
+visible = false
+margin_left = 966.067
+margin_top = 144.507
+margin_right = 1466.07
+margin_bottom = 644.507
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 110 )
+texture_pressed = ExtResource( 83 )
+texture_hover = ExtResource( 88 )
+texture_disabled = ExtResource( 83 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quiz" parent="." instance=ExtResource( 132 )]
+visible = false
+typeQ = 2
+
+[connection signal="timeout" from="NinePatchRect/Front/Up/Buttons/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/PizzaTable" to="." method="_on_PizzaTable_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/PizzaTable/PizzaCompleted/ButtonPizza" to="." method="_on_ButtonPizza_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Pizza Oven" to="." method="_on_Pizza_Oven_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Pizza Box" to="." method="_on_Pizza_Box_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Trash" to="." method="_on_Trash_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Deliver" to="." method="_on_Deliver_pressed"]
+[connection signal="timeout" from="NinePatchRect/Front/Up/Buttons/Deliver/CorrectOrder/CorrectOrderTimer" to="." method="_on_CorrectOrderTimer_timeout"]
+[connection signal="timeout" from="NinePatchRect/Front/Up/Buttons/Deliver/WrongLabel/WrongtOrderTimer" to="." method="_on_WrongtOrderTimer_timeout"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/CancelButton" to="." method="_on_CancelButton2_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaOvenInventory/GridContainer/Inventory1/Icon/PizzaOven/ButtonPizzaOven1" to="." method="_on_ButtonPizzaOven1_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/CancelButton" to="." method="_on_CancelButton3_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory1/TomatoesSauceI1" to="." method="_on_TomatoesSauceI1_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory2/CheeseI2" to="." method="_on_CheeseI2_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory3/ChickenI3" to="." method="_on_ChickenI3_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory4/PepperoniI4" to="." method="_on_PepperoniI4_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory5/HamI5" to="." method="_on_HamI5_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory6/MushroomI6" to="." method="_on_MushroomI6_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/UpInventory/Inventory7/PineappleI7" to="." method="_on_PineappleI7_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory1/DoughI1" to="." method="_on_DoughI1_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory2/DoughI2" to="." method="_on_DoughI2_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory3/DoughI3" to="." method="_on_DoughI3_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory4/DoughI4" to="." method="_on_DoughI4_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory5/DoughI5" to="." method="_on_DoughI5_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/DoughPlace/Inventory6/DoughI6" to="." method="_on_DoughI6_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Table" to="." method="_on_Table_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="NinePatchRect/Front/Up/Buttons/Menus/PizzaTable/No" to="." method="_on_No_pressed"]
+[connection signal="tree_exited" from="NinePatchRect/Front/Dialogue" to="." method="_on_Dialogue_tree_exited"]
+[connection signal="pressed" from="NinePatchRect/Front/Dialogue2/HideButton" to="." method="_on_HideButton_pressed"]
+[connection signal="tree_exited" from="NinePatchRect/Front/Dialogue3" to="." method="_on_Dialogue3_tree_exited"]
+[connection signal="pressed" from="NinePatchRect/Front/AudioButton" to="NinePatchRect/Front/AudioButton" method="_on_AudioButton_pressed"]
+[connection signal="finished" from="NinePatchRect/Front/AudioButton/AudioStreamPlayer" to="NinePatchRect/Front/AudioButton" method="_on_AudioStreamPlayer_finished"]
+[connection signal="pressed" from="NinePatchRect/Front/TranslatorButton" to="NinePatchRect/Front/TranslatorButton" method="_on_TextureButton_pressed"]
+[connection signal="item_selected" from="NinePatchRect/Front/TranslatorButton/TranslatortemList" to="NinePatchRect/Front/TranslatorButton" method="_on_ItemList_item_selected"]
+[connection signal="pressed" from="NinePatchRect/Front/ChefButton" to="." method="_on_ChefButton_pressed"]
+[connection signal="tree_exited" from="Quiz" to="." method="_on_Quiz_tree_exited"]

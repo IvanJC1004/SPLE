@@ -1,0 +1,459 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Quiz/Background Quiz.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/SPL Background.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/SPL Black Background.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Fonts/Prolamina/CT ProLamina.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/UIElements/Image/Normal Button.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIElements/Image/Hover Button.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UIElements/Image/Pressed Button.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Quiz1.gd" type="Script" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 17
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+outline_size = 1
+outline_color = Color( 0.67451, 0.65098, 0.65098, 1 )
+font_data = ExtResource( 5 )
+
+[node name="Quiz1" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/NinePatchRect"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -0.737793
+margin_top = -298.931
+margin_right = -0.737793
+margin_bottom = 301.069
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Margin0" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Title" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 24.0
+margin_right = 1024.0
+margin_bottom = 57.0
+custom_fonts/font = SubResource( 1 )
+text = "QUIZ1"
+align = 1
+
+[node name="Margin1" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 61.0
+margin_right = 1024.0
+margin_bottom = 81.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Question1" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 85.0
+margin_right = 1024.0
+margin_bottom = 118.0
+custom_fonts/font = SubResource( 1 )
+text = "QUESTIONQ1Q1"
+align = 1
+
+[node name="Margin2" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 122.0
+margin_right = 1024.0
+margin_bottom = 142.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="AQQ1A1and2" type="HBoxContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 146.0
+margin_right = 1024.0
+margin_bottom = 170.0
+alignment = 1
+
+[node name="Margin0" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A1and2"]
+margin_left = 326.0
+margin_right = 336.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ1A1" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A1and2"]
+margin_left = 340.0
+margin_right = 364.0
+margin_bottom = 24.0
+
+[node name="AQQ1A1" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A1and2"]
+margin_left = 368.0
+margin_top = 1.0
+margin_right = 510.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q1A1"
+align = 1
+
+[node name="Margin1" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A1and2"]
+margin_left = 514.0
+margin_right = 524.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ1A2" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A1and2"]
+margin_left = 528.0
+margin_right = 552.0
+margin_bottom = 24.0
+
+[node name="AQQ1A2" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A1and2"]
+margin_left = 556.0
+margin_top = 1.0
+margin_right = 697.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q1A2"
+align = 1
+
+[node name="AQQ1A3and4" type="HBoxContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 174.0
+margin_right = 1024.0
+margin_bottom = 198.0
+alignment = 1
+
+[node name="Margin0" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A3and4"]
+margin_left = 327.0
+margin_right = 337.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ1A3" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A3and4"]
+margin_left = 341.0
+margin_right = 365.0
+margin_bottom = 24.0
+
+[node name="AQQ1A3" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A3and4"]
+margin_left = 369.0
+margin_top = 1.0
+margin_right = 509.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q1A3"
+align = 1
+
+[node name="Margin1" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A3and4"]
+margin_left = 513.0
+margin_right = 523.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ1A4" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A3and4"]
+margin_left = 527.0
+margin_right = 551.0
+margin_bottom = 24.0
+
+[node name="AQQ1A4" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ1A3and4"]
+margin_left = 555.0
+margin_top = 1.0
+margin_right = 696.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q1A4"
+align = 1
+
+[node name="Margin3" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 202.0
+margin_right = 1024.0
+margin_bottom = 222.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Question2" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 226.0
+margin_right = 1024.0
+margin_bottom = 259.0
+custom_fonts/font = SubResource( 1 )
+text = "QUESTIONQ1Q2"
+align = 1
+
+[node name="Margin4" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 263.0
+margin_right = 1024.0
+margin_bottom = 283.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="AQQ2A1and2" type="HBoxContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 287.0
+margin_right = 1024.0
+margin_bottom = 311.0
+alignment = 1
+
+[node name="Margin0" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A1and2"]
+margin_left = 327.0
+margin_right = 337.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ2A1" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A1and2"]
+margin_left = 341.0
+margin_right = 365.0
+margin_bottom = 24.0
+
+[node name="AQQ2A1" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A1and2"]
+margin_left = 369.0
+margin_top = 1.0
+margin_right = 510.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q2A1"
+align = 1
+
+[node name="Margin1" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A1and2"]
+margin_left = 514.0
+margin_right = 524.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ2A2" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A1and2"]
+margin_left = 528.0
+margin_right = 552.0
+margin_bottom = 24.0
+
+[node name="AQQ2A2" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A1and2"]
+margin_left = 556.0
+margin_top = 1.0
+margin_right = 696.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q2A2"
+align = 1
+
+[node name="AQQ2A3and4" type="HBoxContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 315.0
+margin_right = 1024.0
+margin_bottom = 339.0
+alignment = 1
+
+[node name="Margin0" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A3and4"]
+margin_left = 328.0
+margin_right = 338.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ2A3" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A3and4"]
+margin_left = 342.0
+margin_right = 366.0
+margin_bottom = 24.0
+
+[node name="AQQ2A3" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A3and4"]
+margin_left = 370.0
+margin_top = 1.0
+margin_right = 509.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q2A3"
+align = 1
+
+[node name="Margin1" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A3and4"]
+margin_left = 513.0
+margin_right = 523.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ2A4" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A3and4"]
+margin_left = 527.0
+margin_right = 551.0
+margin_bottom = 24.0
+
+[node name="AQQ2A4" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ2A3and4"]
+margin_left = 555.0
+margin_top = 1.0
+margin_right = 695.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q2A4"
+align = 1
+
+[node name="Margin5" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 343.0
+margin_right = 1024.0
+margin_bottom = 363.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Question3" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 367.0
+margin_right = 1024.0
+margin_bottom = 400.0
+custom_fonts/font = SubResource( 1 )
+text = "QUESTIONQ1Q3"
+align = 1
+
+[node name="Margin6" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 404.0
+margin_right = 1024.0
+margin_bottom = 424.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="AQQ3A1and2" type="HBoxContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 428.0
+margin_right = 1024.0
+margin_bottom = 452.0
+alignment = 1
+
+[node name="Margin0" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A1and2"]
+margin_left = 328.0
+margin_right = 338.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ3A1" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A1and2"]
+margin_left = 342.0
+margin_right = 366.0
+margin_bottom = 24.0
+
+[node name="AQQ3A1" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A1and2"]
+margin_left = 370.0
+margin_top = 1.0
+margin_right = 510.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q3A1"
+align = 1
+
+[node name="Margin1" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A1and2"]
+margin_left = 514.0
+margin_right = 524.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ3A2" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A1and2"]
+margin_left = 528.0
+margin_right = 552.0
+margin_bottom = 24.0
+
+[node name="AQQ3A2" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A1and2"]
+margin_left = 556.0
+margin_top = 1.0
+margin_right = 695.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q3A2"
+align = 1
+
+[node name="AQQ3A3and4" type="HBoxContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 456.0
+margin_right = 1024.0
+margin_bottom = 480.0
+alignment = 1
+
+[node name="Margin0" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A3and4"]
+margin_left = 329.0
+margin_right = 339.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ3A3" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A3and4"]
+margin_left = 343.0
+margin_right = 367.0
+margin_bottom = 24.0
+
+[node name="AQQ3A3" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A3and4"]
+margin_left = 371.0
+margin_top = 1.0
+margin_right = 509.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q3A3"
+align = 1
+
+[node name="Margin1" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A3and4"]
+margin_left = 513.0
+margin_right = 523.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="CheckBoxAQQ3A4" type="CheckBox" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A3and4"]
+margin_left = 527.0
+margin_right = 551.0
+margin_bottom = 24.0
+
+[node name="AQQ3A4" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AQQ3A3and4"]
+margin_left = 555.0
+margin_top = 1.0
+margin_right = 694.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 2 )
+text = "ANSWERQ1Q3A4"
+align = 1
+
+[node name="Margin7" type="MarginContainer" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 484.0
+margin_right = 1024.0
+margin_bottom = 514.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="AcceptButton" type="TextureButton" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_left = 452.0
+margin_top = 518.0
+margin_right = 572.0
+margin_bottom = 563.0
+rect_min_size = Vector2( 120, 45 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 7 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="Title" type="Label" parent="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AcceptButton"]
+anchor_left = -4.96705e-10
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.707153
+margin_right = -0.707153
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ACCEPTQ1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="NinePatchRect/NinePatchRect/NinePatchRect/VBoxContainer/AcceptButton" to="." method="_on_AcceptButton_pressed"]

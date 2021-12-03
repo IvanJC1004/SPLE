@@ -1,0 +1,99 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/UIElements/Image/Background Login Image.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+outline_size = 2
+outline_color = Color( 0.788235, 0.14902, 0.101961, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+font_data = ExtResource( 1 )
+
+[node name="Warnings" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.840897
+margin_right = -0.840881
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -300.0
+margin_top = -150.0
+margin_right = 300.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 2, 247, 26, 4 )
+patch_margin_bottom = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -295.0
+margin_top = -145.0
+margin_right = 295.0
+margin_bottom = 145.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 166, 257, 19, 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 25.0
+margin_top = 25.0
+margin_right = -25.0
+margin_bottom = -25.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_right = 540.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+texture = ExtResource( 2 )
+region_rect = Rect2( -204.385, -13.0867, 210.47, 22.5871 )
+patch_margin_left = 46
+patch_margin_top = 18
+
+[node name="Title" type="Label" parent="NinePatchRect/NinePatchRect/VBoxContainer/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "WARNINGS"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 44.0
+margin_right = 540.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 0, 40 )
+
+[node name="Text" type="RichTextLabel" parent="NinePatchRect/NinePatchRect/VBoxContainer"]
+margin_top = 88.0
+margin_right = 540.0
+margin_bottom = 248.0
+rect_min_size = Vector2( 0, 160 )
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )

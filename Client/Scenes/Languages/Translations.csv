@@ -1,0 +1,199 @@
+id,en,es
+SS1SEARCH,Search,Buscar
+SS1CONNECT,Connect,Conectar
+SS1EXIT,Exit,Salir
+L1TITLE,PLE,PLE
+L1USERNAMETITLE,Username,Nombre de Usuario
+L1PASSWORDTITLE,Password,Clave de Usuario
+L1LOGINBUTTON,Login,Iniciar sesión
+L1CREATEBUTTON,Create Account,Crear una cuenta
+L2PASSWORDREPEATTITLE,Repeat Password,Repite la Contraseña
+L2CANCELBUTTON,Cancel,Cancelar
+SS2PLAYERSTATISTICS,Player Statistics,Estadísticas del jugador
+SS2PROGRESS,Progress:,Progreso:
+SS2BASICCONCEPTS,Basic Concepts:,Conceptos Básicos:
+SS2INTERMEDIATECONCEPT,Intermediate Concepts:,Conceptos Intermedios:
+SS2ADVANCEDCONCEPT,Advanced Concepts:,Conceptos Avanzados:
+STATS1,Player Statistics,Estadísticas del Jugador
+TROPHYB,Basic,Básico
+DIALOGPART1N1,"Hello there! Nice to meet you, my name is David and I will be your guide in this learning adventure.","¡Hola! Un placer conocerte, mi nombre es David y seré tú guía en esta aventura de aprendizaje."
+DIALOGPART1N2,For this first part we will use the restaurant where we are at the moment.,Para esta primera parte haremos uso del restaurante en el que nos encontramos.
+DIALOGPART1N3,"But first, I will dress according to the occasion.","Pero primero, me vestiré de acuerdo a la ocasión."
+DIALOGPART1N4,Ready! Let's get started.,¡Listo! Comenzemos.
+DIALOGPART1N5,"First, we will learn to use the ingredients and tools that the restaurant offers us.","Primero, aprenderemos a utilizar los ingredientes y las herramientas que nos ofrece el restaurante."
+DIALOGPART1N6,"To select the ingredients and the restaurant tools, we will use the left click.","Para seleccionar los ingredientes y herramientas del restaurante, emplearemos el clic izquierdo."
+DIALOGPART1N7,Open the fridge with a click and let's see the ingredients we have.,Abre la nevera con un clic y veamos los ingredientes que tenemos.
+DIALOGPART1N8,These are the ingredients that we will use to make the pizzas.,Estos son los ingredientes que utilizaremos para realizar las pizzas. 
+DIALOGPART1N9,At the top we have the customer's order and the order number.,En la parte de arriba tenemos la orden del cliente y el número de orden.
+DIALOGPART1N10,"For this first part we will make the pizza called ""Pizza Order # 0"".","Para esta primera parte realizaremos la pizza indicada ""Orden de Pizza #0""."
+DIALOGPART1N11,"1) To make the pizza dough, click on the flour.","1) Para realizar la masa de la pizza, debemos dar clic en la harina."
+DIALOGPART1N12,Now we must click on the kneading table and wait the required time.,Ahora debemos dar clic en la tabla de amasar y esperar el tiempo indicado.
+DIALOGPART1N13,"Finally, we click on the dough and then we click on the preparation table.","Finalmente, damos clic en la masa y despues damos clic en la tabla de preparación."
+DIALOGPART1N14,"As we can see, the ready ingredients are being stored in this place.","Como podemos observar, los ingredientes listos van quedando almacenados en este lugar."
+DIALOGPART1N15,"2) To make the tomato sauce, we must click on the tomatoes.","2) Para realizar la salsa de tomate, debemos dar clic en los tomates."
+DIALOGPART1N16,Now we must click on the chopping table and wait the required time.,Ahora debemos dar clic en la mesa de picar y esperar el tiempo indicado.
+DIALOGPART1N17,"Then, we click on the cut tomatoes, then we click on the stove and we wait the required time.","Posteriormente, damos clic en los tomates cortados, damos clic en la estufa y esperamos el tiempo indicado."
+DIALOGPART1N18,"Finally, we click on the preparation table.","Finalmente, damos clic en la tabla de preparación."
+DIALOGPART1N19,"3) To get grated cheese, we must click on the cheese.","3) Para obtener queso rallado, debemos dar clic en el queso."
+DIALOGPART1N20,Now we must click on the chopping table and wait the required time.,Ahora debemos dar clic en la mesa de picar y esperar el tiempo indicado.
+DIALOGPART1N21,Note: For the other ingredients only the cutting board should be used.,Nota: Para los demas ingredientes solo se debe usar la tabla de picar.
+DIALOGPART1N22,"After having the ingredients of the order ready, we proceed to make the pizza.","Luego de tener los ingredientes de la orden listos, procedemos a realizar la pizza."
+DIALOGPART1N23,Click on the preparation table and verify that we have the ingredients for the order.,Damos clic en la tabla de preparación y verificamos que tengamos los ingredientes de la orden.
+DIALOGPART1N24,"4) To assemble the pizza, we must click on the ingredient and then click on the table.","4) Para armar la pizza, debemos dar clic en el ingrediente y después dar clic en la tabla."
+DIALOGPART1N25,"If we want to disassemble the pizza, we click on the red button and all the ingredients will return to their place.","Si queremos desarmar la pizza, damos clic en el botón rojo y todos los ingredientes volverán a su lugar."
+DIALOGPART1N26,"To finish the pizza that we have assembled, we click on the green button and the pizza will appear on the table.","Para finalizar la pizza que hemos armado, damos clic en el botón verde y aparecerá la pizza en la mesa."
+DIALOGPART1N27,"5) To bake the pizza, click on the pizza on the table and then click on the oven.","5) Para hornear la pizza, damos clic en la pizza de la mesa y después damos clic en el horno."
+DIALOGPART1N28,"Finally, we click on the oven space and wait the required time.","Finalmente, damos clic en el espacio del horno y esperamos el tiempo indicado."
+DIALOGPART1N29,Note: It is important to monitor the oven because the pizza can burn.,Nota: Es importante estar pendiente del horno porque la pizza se puede quemar.
+DIALOGPART1N30,"6) To box the pizza, click on the pizza and then click on the shelf with boxes.","6) Para envolver la pizza, damos clic en la pizza y despues damos clic en la estanteria de cajas."
+DIALOGPART1N31,"7) To deliver the pizza, we click on the tray with the box icon on the cursor.","7) Para entregar la pizza, damos clic en la bandeja con el icono de la caja en el cursor."
+DIALOGPART1N32,"Note: If the pizza does not contain the correct ingredients or is burnt, the customer will not receive it.",Nota: Si la pizza no contiene los ingredientes correctos o está quemada. El cliente no la recibirá.
+DIALOGPART1N33,"In this case, it will have to be thrown away and the pizza will have to be made again.","En este caso, se tendrá que botar a la basura y realizar de nuevo la pizza."
+DIALOGPART1N34,Well done! Now we will see our customers' opinions.,¡Bien hecho! Ahora veremos las opiniones de nuestros clientes.
+DIALOGPART1N35,"Carla: ""There were very large pieces of pineapple and others were very small"".","Carla: ""Habían trozos de piña muy grandes y otros muy pequeños""."
+DIALOGPART1N36,"Daniel: ""The slice of pizza I ate had less chicken than my friend"".","Daniel: ""El pedazo de pizza que me comí, tenía menos pollo que el de mi amigo""."
+DIALOGPART1N37,"Laura: ""I have waited a long time for my order"".","Laura: ""He esperado mucho tiempo mi orden""."
+DIALOGPART1N38,"After this experience in the restaurant, I would like to show you a comparison with the engineering of software product lines.","Después de esta experiencia en el restaurante, me gustaría mostrarte una comparativa con la ingeniería de líneas de productos de software."
+DIALOGPART1N39,"Next, you will take a test to evaluate your knowledge.","A continuación, te realizaré una prueba para ver que tanto has aprendido."
+PIZZAORDER0,Pizza Order # 0,Orden de Pizza #0
+PIZZAORDER1,Pizza Order # 1,Orden de Pizza #1
+PIZZAORDER2,Pizza Order # 2,Orden de Pizza #2
+PIZZAORDER3,Pizza Order # 3,Orden de Pizza #3
+INGREDIENTSORDER,Ingredients,Ingredientes
+FLOUR1,Flour,Harina
+TOMATOES1,Tomatoes,Tomates
+CHEESE1,Cheese,Queso
+HAM1,Ham,Jamón
+PINEAPPLE1,Pineapple,Piña
+CHICKEN1,Chicken,Pollo
+MUSHROOMS1,Mushrooms,Champiñones
+CORRECTORDER,Correct Order,Orden Correcta
+WRONGORDER,Wrong Order,Orden Incorrecta
+ACCEPTQ1,Accept,Aceptar
+NEXT1,Next,Siguiente
+DIALOGPART2N1,"Hello! It is a pleasure to see you again, at this level we will learn 3 concepts that I will explain below.","¡Hola! Es un placer volver a verte, en este nivel aprenderemos 3 conceptos que explicaré a continuación."
+DIALOGPART2N2,Concept 1 (Variability): It is the set of variations that occur from a common product.,Concepto 1 (Variabilidad):  Es el conjunto de variaciones que se producen a partir de un producto en común. 
+DIALOGPART2N3,"In other words, a company can produce different options for the same product.","Es decir, una empresa puede producir distintas opciones para un mismo producto."
+DIALOGPART2N4,"For example. A pizza can have different size, flavor, ingredients, among other characteristics.","Por ejemplo. Una pizza puede tener distinto tamaño, sabor, ingredientes, entre otras características."
+DIALOGPART2N5,"Similarly, software product line engineering applies this concept to software artifacts.",De manera similar la ingeniería de línea de productos de software aplica este concepto a los artefactos de software.
+DIALOGPART2N6,Variations can be seen in any type of asset that needs to be managed.,Se pueden ver variaciones en cualquier tipo de activo que deba ser gestionado. 
+DIALOGPART2N7,"There can be requirements, implementations, test cases, designs, among others.","Pueden ser requisitos, implementaciones, casos de prueba, diseños, entre otros."
+DIALOGPART2N8,Concept 2 (Reuse): It is a process of creating new systems from the systematic use of existing artifacts.,Concepto 2 (Reuso): Es el proceso de creación de sistemas nuevos a partir de la utilización sistemática de artefactos existentes.
+DIALOGPART2N9,"That is, by using the common ingredients (seen in the previous level), we can create various types of pizzas.","Es decir, mediante el uso de los ingredientes comunes (Vistos en el anterior nivel). Podemos crear varios tipos de pizzas. "
+DIALOGPART2N10,Concept 3 (Variations in time and space): Artifacts are subject to maintenance and evolution.,Concepto 3 (Variaciones en el tiempo y el espacio): Los artefactos están sujetos a mantenimiento y evolución (M).
+DIALOGPART2N11,"Secondly, in space there are 'N' number of products and each product in time has 'M' nymber of states.","Por otro lado, en el espacio existen 'N' cantidad de productos y cada producto en el tiempo tiene 'M' cantidad de estados."
+DIALOGPART2N12,"Returning to the restaurant, we will make new recipes and put into practice the previously mentioned concepts.","Volviendo con el restaurante, haremos nuevas recetas y pondremos en practica los conceptos previamente mencionados."
+DIALOGPART2N13,"For this first part, the refrigerator, stove, cutting board and kneading board have been replaced. by Chefs.","Para esta primera parte, se ha reemplazado la nevera, estufa, tabla de picar y tabla de amasar. por Chefs."
+DIALOGPART2N14,"1) Left click on each of the chefs' buttons, to assign each chef to a particular task.","1) Da click izquierdo en cada uno de los botones de chefs, para asignar cada chef a una tarea en particular."
+DIALOGPART2N15,"In total we have 3 chefs in charge who will help us with chopping, preparing sauce and kneading.","En total tenemos 3 chefs a cargo que nos ayudarán con las tareas de picar, preparar salsa y amasar."
+DIALOGPART2N16,Every 5 seconds the chefs will prepare an ingredient for their specific task.,Cada 5 segundos los chefs prepararán un ingrediente de su tarea específica.
+DIALOGPART2N17,2) Left click on the preparation table to make each of the requested pizzas.,2) Da un click izquierdo en la tabla de preparación para realizar cada una de las pizzas solicitadas.
+DIALOGPART2N18,"3) To bake the pizza, click on the pizza on the table and then click on the oven.","3) Para hornear la pizza, damos clic en la pizza de la mesa y después damos clic en el horno."
+DIALOGPART2N19,"Finally, we click on the oven space and wait the required time.","Finalmente, damos clic en el espacio del horno y esperamos el tiempo indicado."
+DIALOGPART2N20,Note: It is important to monitor the oven because the pizza can burn.,Nota: Es importante estar pendiente del horno porque la pizza se puede quemar.
+DIALOGPART2N21,"4) To box the pizza, click on the pizza and then click on the shelf of boxes.","4) Para envolver la pizza, damos clic en la pizza y despues damos clic en la estanteria de cajas."
+DIALOGPART2N22,"5) To deliver the pizza, we click on the tray with the box icon on the cursor.","5) Para entregar la pizza, damos clic en la bandeja con el icono de la caja en el cursor."
+DIALOGPART2N23,"Note: If the pizza does not contain the correct ingredients or is burnt, the customer will not receive it.",Nota: Si la pizza no contiene los ingredientes correctos o está quemada. El cliente no la recibirá.
+DIALOGPART2N24,"In this case, it will have to be thrown away and the pizza will have to be made again.","En este caso, se tendrá que botar a la basura y realizar de nuevo la pizza."
+DIALOGPART2N25,Well done! Now we will see our customers' opinions.,¡Bien hecho! Ahora veremos las opiniones de nuestros clientes.
+DIALOGPART2N26,"Carla: ""The ingredients were better chopped.""","Carla: ""Los ingredientes estaban mejor picados""."
+DIALOGPART2N27,"Daniel: ""The pizza slices were better distributed.""","Daniel: ""Las porciones de pizza estaban mejor repartidas""."
+DIALOGPART2N28,"Laura: ""My order was delivered a little faster.""","Laura: ""Mi pedido fue entregado un poco más rápido""."
+DIALOGPART2N29,"After this experience in the restaurant, I would like to show a comparison with the concepts mentioned above.","Después de esta experiencia en el restaurante, me gustaría mostrarte una comparativa con los conceptos previamente mencionados."
+DIALOGPART2N30,"Next, you will take a test to evaluate your knowledge.","A continuación, te realizaré una prueba para ver que tanto has aprendido."
+CONFIGURATORMENU,Selection Process,Proceso de Selección
+INGREDIENTSMENU1,Meat and Sausages,Carnes y Embutidos
+INGREDIENTSMENU2,Fruits and Vegetables,Frutas y Vegetales
+DIALOGPART3N1,Hello! At this level we will learn 2 new concepts and analyze the benefits obtained so far.,¡Hola! En este nivel aprenderemos 2 nuevos conceptos y analizaremos los beneficios obtenidos hasta ahora.
+DIALOGPART3N2,Concept 1 (Configurator): Also known as production and processing mechanisms.,Concepto 1 (Configurador): También conocido como mecanismo de producción y proceso.
+DIALOGPART3N3,They are the means to compose and configure products from the asset inputs.,Es el medio para componer y configurar productos a partir de las entradas de activos.
+DIALOGPART3N4,"Another way to look at it considering the restaurant as an example, it can be seen as a machine.",Visto de otra manera y basandonos en el ejemplo del restaurante. Se puede ver como una máquina.
+DIALOGPART3N5,Which receives ingredients (input of common and variable assets) and a characteristics model (seen in level 1).,La cual recibe ingredientes (entrada de activos comunes y variables) y un modelo de características (visto en el nivel 1).
+DIALOGPART3N6,To later process them and generate the pizzas offered by the restaurant (product outputs).,Para posteriormente ser procesados y generar las pizzas que ofrece el restaurante (salidas de producto).
+DIALOGPART3N7,Concept 2 (Intangible Product): Products are tangible only after the production and processing stage.,Concepto 2 (Producto Intangible): Los productos son tangibles únicamente después de la etapa de producción y proceso.
+DIALOGPART3N8,"The pizzas are only tangible, after the configurator generates them.","Como podemos observar, las pizzas únicamente son tangibles después de que el configurador las genere."
+DIALOGPART3N9,"Next, we will use a configurator to make the pizzas.","A continuación, utilizaremos un configurador para elaborar las pizzas."
+DIALOGPART3N10,At this level we will see the advantages of adopting the software product line in the restaurant.,En este nivel veremos las ventajas de adoptar las líneas de producto de software en el restaurante.
+DIALOGPART3N11,Based on the experience and comments of our clients in the previous levels.,Basándonos en la experiencia y comentarios de nuestros clientes en los niveles anteriores.
+DIALOGPART3N12,"1) To assemble the pizza, we must click on the configurator (the gray machine).","1) Para armar la pizza, debemos dar clic en el configurador (la maquina de color gris)."
+DIALOGPART3N13,"If we want to disassemble the pizza, we click on the red button and all the ingredients will return to their place.","Si queremos desarmar la pizza, damos clic en el botón rojo y todos los ingredientes volverán a su lugar."
+DIALOGPART3N14,"To finish the pizza that we have assembled, we click on the green button and the pizza will appear in the configurator.","Para finalizar la pizza que hemos armado, damos clic en el botón verde y aparecerá la pizza en el configurador."
+DIALOGPART3N15,We wait for the pizza to reach the tray.,Esperamos a que la pizza llegue a la bandeja.
+DIALOGPART3N16,"2) To deliver the pizza, we point the cursor on the tray and click.","2) Para entregar la pizza, damos clic en la bandeja con el cursor."
+DIALOGPART3N17,"Note: If the pizza does not contain the correct ingredients or is burnt, you will lose stars from the ranking.",Nota: Si la pizza no contiene los ingredientes correctos o está quemada. Perderás estrellas del nivel.
+DIALOGPART3N18,Well done! Now we will see our customers' opinions.,¡Bien hecho! Ahora veremos las opiniones de nuestros clientes.
+DIALOGPART3N19,"Carla: ""The ingredients are similar in size.""","Carla: ""Los ingredientes tenían tamaños similares""."
+DIALOGPART3N20,"Daniel: ""The pizza slices contain the same amount of ingredients each"".","Daniel: ""Las porciones de pizza contenían la misma cantidad de ingredientes cada una""."
+DIALOGPART3N21,"Laura: ""My order was delivered very quickly.""","Laura: ""Mi pedido fue entregado muy rápido""."
+DIALOGPART3N22,"After this experience in the restaurant, I would like to show a comparison with the concepts mentioned above.","Después de esta experiencia en el restaurante, me gustaría mostrarte una comparativa con los conceptos previamente mencionados."
+DIALOGPART3N23,"Next, you will take a test to evaluate your knowledge.","A continuación, te realizaré una prueba para ver que tanto has aprendido."
+QUIZ1,Quiz #1,Quiz #1
+QUESTIONQ1Q1,1. Check Common Ingredients:,1. Seleccione los Ingredientes Comunes:
+ANSWERQ1Q1A1,A) Flour.,A) Harina.
+ANSWERQ1Q1A2,B) Tomato Sauce.,B) Salsa de Tomate.
+ANSWERQ1Q1A3,C) Pineapple.,C) Piña.
+ANSWERQ1Q1A4,D) Chicken.,D) Pollo.
+QUESTIONQ1Q2,2. Check the Optional Ingredients:,2. Seleccione los Ingredientes Opcionales:
+ANSWERQ1Q2A1,A) Ham.,A) Jamón.
+ANSWERQ1Q2A2,B) Flour.,B) Harina.
+ANSWERQ1Q2A3,C) Tomato Sauce.,C) Salsa de Tomate.
+ANSWERQ1Q2A4,D) Pepperoni.,D) Pepperoni.
+QUESTIONQ1Q3,3. Check the Restaurant's Product Line Portafolio:,3. Seleccione las salidas de productos del restaurante:
+ANSWERQ1Q3A1,A) Mushrooms.,A) Champiñones.
+ANSWERQ1Q3A2,B) Pizza Order # 1.,B) Orden de Pizza #1.
+ANSWERQ1Q3A3,C) Flour.,C) Harina.
+ANSWERQ1Q3A4,D) Pizza Order # 3.,D) Orden de Pizza #3.
+QUIZ2,Quiz #2,Quiz #2
+QUESTIONQ2Q1,1. Check the Variations of the Pizza Product:,1. Seleccione las Variaciones del Producto Pizza:
+ANSWERQ2Q1A1,"A) Product A (Cheese, ...).","A) Producto A (Queso,...)."
+ANSWERQ2Q1A2,B) There are no variations.,B) No existen variaciones.
+ANSWERQ2Q1A3,"C) Product C (Chicken, ...).","C) Producto C (Pollo,...)."
+ANSWERQ2Q1A4,D) All of the above.,D) Todas las anteriores.
+QUESTIONQ2Q2,2. Check Reusable Ingredients:,2. Seleccione los Ingredientes Reutilizables:
+ANSWERQ2Q2A1,A) Mushrooms.,A) Champiñones.
+ANSWERQ2Q2A2,"B) Chicken, Cheese and Ham.","B) Pollo, Queso y Jamón."
+ANSWERQ2Q2A3,C) Pepperoni and Pineapple.,C) Pepperoni y Piña.
+ANSWERQ2Q2A4,"D) Flour, Tomato Sauce and Cheese.","D) Harina, Salsa de Tomate y Queso."
+QUESTIONQ2Q3,3. Check the Characteristics of the Variations Management in Time and Space:,3. Seleccione las Características de la Gestión de Variaciones en el Tiempo y el Espacio:
+ANSWERQ2Q3A1,A) The main assets evolve over time ('M').,A) Los activos principales evolucionan en el tiempo ('M'). 
+ANSWERQ2Q3A2,B) A collection of products with similar characteristics ('N').,B) Una colección de producos con características similares ('N').
+ANSWERQ2Q3A3,C) Artifacts are subject to maintenance and evolution.,C) Los artefactos están sujetos a mantenimiento y evolución.
+ANSWERQ2Q3A4,D) None of the above.,D) Ninguna de las anteriores.
+QUIZ3,Quiz #3,Quiz #3
+QUESTIONQ3Q1,3. Check the Inputs of the Configurator:,1. Seleccione las Entradas del Configurador:
+ANSWERQ3Q1A1,A) Core Assets.,A) Activos.
+ANSWERQ3Q1A2,B) Product Specifications.,B) Modelo de Características.
+ANSWERQ3Q1A3,C) Product Line Portafolio.,C) Salidas de Productos de Software.
+ANSWERQ3Q1A4,D) None of the above.,D) Ninguna de las anteriores.
+QUESTIONQ3Q2,2. Check when a Product is Tangible,2. Seleccione en que Momento un Producto es Tangible
+ANSWERQ3Q2A1,A) After the automated production stage.,A) Después de la etapa de producción automatizada.
+ANSWERQ3Q2A2,B) Before the automated production stage.,B) Antes de la etapa de producción automatizada.
+ANSWERQ3Q2A3,C) The product is never tangible.,C) El producto nunca es tangible.
+ANSWERQ3Q2A4,D) None of the above.,D) Ninguna de las anteriores.
+QUESTIONQ3Q3,3. Check the benefits seen on the level.,3. Seleccione los beneficios vistos en el nivel.
+ANSWERQ3Q3A1,A) Increase in product quality.,A) Aumento en la calidad del producto.
+ANSWERQ3Q3A2,B) Reduction in time needed to implement a new product.,B) Reducción en el tiempo necesario para implementar un producto nuevo.
+ANSWERQ3Q3A3,C) Increase the total number of products that can be implemented.,C) Aumento en el numero total de productos que pueden ser implementados.
+ANSWERQ3Q3A4,D) Reduction in average implementation effort.,D)Reducción en el esfuerzo promedio de implementación.
+FRIDGE1,Fridge,Nevera
+COOKINGTABLE1,Chopping Table,Tabla de Picar
+KNEAD1,Kneading table,Tabla de amasar
+PIZZATABLE1,Preparation Table,Tabla de Preparación
+STOVE1,Stove,Estufa
+PIZZAOVEN1,Pizza Oven,Horno para Pizza
+PIZZABOX1,Pizza Box,Cajas para Pizza
+TRASH1,Trash,Basura
+DELIVER1,Deliver,Entregar
+CONFIGURATOR1,Configurator,Configurador
+IDPASSWORDERROR,Please provide valid user id and password.,Por favor proporcione un id de usuario y una contraseña válidos.
+USERNAMEERROR,Please provide a valid username.,Por favor proporcione un nombre de usuario válido.
+PASSWORDERROR,Please provide a valid password.,Por favor proporcione una contraseña válida.
+PASSWORDREERROR,Please repeat your password.,Por favor repita su contraseña.
+PASSWORDMATCHERROR,Passwords don't match.,Las contraseñas no coinciden.
+PASSWORD7ERROR,Password must contain at least 7 characters.,La contraseña debe contener al menos 7 carácteres.
+WARNINGS,Warning,Advertencia
+SERVERLISTERROR,Failed to connect to server list.,Error al conectarse a la lista de servidores.
+LOGINSERVERERROR,Failed to connect to login server.,Error al conectarse al servidor de inicio de sesión.
+CREATEACCOUNT1,"Account created, please proceed with logging in.","Cuenta creada, proceda con el inicio de sesión"
+CREATEACCOUNT2,"Couldn't create account, please try again.","No se pudo crear la cuenta, inténtelo de nuevo."
+CREATEACCOUNT3,"The username already exist, please use a different username.","El nombre de usuario ya existe, utilice un nombre de usuario diferente."

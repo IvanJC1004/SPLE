@@ -1,0 +1,209 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Dialogue3.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Next Indicator Pressed.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Background Dialog.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/David Shadow.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/David Chef.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fonts/Prolamina/CT ProLamina.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/UIElements/Image/Pressed Button.png" type="Texture" id=8]
+[ext_resource path="res://Assets/UIElements/Image/Hover Button.png" type="Texture" id=9]
+[ext_resource path="res://Assets/UIElements/Image/Normal Button.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Quiz/Comparative1Es.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Next Indicator Hover.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Next Indicator Normal.png" type="Texture" id=13]
+
+[sub_resource type="Animation" id=1]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 419.903, -101.61 ), Vector2( 419.903, -93.028 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.05, 0.05 ), Vector2( 0.08, 0.08 ) ]
+}
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=4]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 813.901, 158.808 ), Vector2( 813.901, 165.02 ) ]
+}
+
+[sub_resource type="DynamicFont" id=5]
+size = 35
+outline_size = 1
+outline_color = Color( 0.67451, 0.65098, 0.65098, 1 )
+font_data = ExtResource( 7 )
+
+[node name="Dialogue3" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogBox" type="Control" parent="."]
+anchor_left = 0.514
+anchor_top = 1.0
+anchor_right = 0.514
+anchor_bottom = 1.00068
+margin_left = -431.336
+margin_top = -267.0
+margin_right = 430.664
+margin_bottom = -65.4051
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Customer1" type="Sprite" parent="DialogBox"]
+position = Vector2( 419.903, -101.61 )
+scale = Vector2( 0.08, 0.08 )
+texture = ExtResource( 6 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogBox/Customer1"]
+autoplay = "DavidIDLE"
+anims/DavidIDLE = SubResource( 1 )
+
+[node name="CustomerShadow" type="Sprite" parent="DialogBox"]
+position = Vector2( 418.049, -31.0408 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogBox/CustomerShadow"]
+autoplay = "DavidShadowIDLE"
+anims/DavidShadowIDLE = SubResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="DialogBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -17.0
+margin_bottom = -0.00286865
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = -2.0
+margin_right = -24.0
+margin_bottom = -17.0029
+mouse_default_cursor_shape = 2
+custom_fonts/normal_font = SubResource( 3 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next Indicator" type="Sprite" parent="DialogBox"]
+position = Vector2( 813.901, 165.02 )
+scale = Vector2( 0.0413728, 0.0442361 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogBox/Next Indicator"]
+autoplay = "IDLE"
+anims/IDLE = SubResource( 4 )
+
+[node name="TextureButton" type="TextureButton" parent="DialogBox/Next Indicator"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -293.5
+margin_top = -264.0
+margin_right = -293.5
+margin_bottom = -264.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="DialogBox"]
+
+[node name="Comparative" type="TextureRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextButton" type="TextureButton" parent="Comparative"]
+margin_left = 848.854
+margin_top = 2.69766
+margin_right = 968.854
+margin_bottom = 47.6977
+rect_min_size = Vector2( 120, 45 )
+rect_scale = Vector2( 0.8, 0.8 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+texture_disabled = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Comparative/NextButton"]
+anchor_left = -4.96705e-10
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.707153
+margin_right = -0.707153
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ACCEPTQ1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="DialogBox/Next Indicator/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="tween_completed" from="DialogBox/Tween" to="." method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="Comparative/NextButton" to="." method="_on_NextButton_pressed"]

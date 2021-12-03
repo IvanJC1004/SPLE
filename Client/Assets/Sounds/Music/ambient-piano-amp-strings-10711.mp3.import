@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ambient-piano-amp-strings-10711.mp3-f69351739cfb0a9371632bcdfc665a51.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Music/ambient-piano-amp-strings-10711.mp3"
+dest_files=[ "res://.import/ambient-piano-amp-strings-10711.mp3-f69351739cfb0a9371632bcdfc665a51.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

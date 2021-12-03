@@ -1,0 +1,136 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/MainScenes/Menu/ServersSelection.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UIElements/Image/Background Login Image.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/Prolamina/CT ProLamina.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/UIElements/Image/Hover Button.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UIElements/Image/Pressed Button.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIElements/Image/Normal Button.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+outline_size = 1
+outline_color = Color( 0.67451, 0.65098, 0.65098, 1 )
+font_data = ExtResource( 3 )
+
+[node name="ServersSelection" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -212.5
+margin_top = -215.0
+margin_right = 212.5
+margin_bottom = 215.0
+rect_min_size = Vector2( 425, 430 )
+texture = ExtResource( 2 )
+region_rect = Rect2( 75.8235, 121.328, 11.0496, 1.22774 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" type="ItemList" parent="Background/VBoxContainer"]
+margin_right = 426.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 0, 360 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/VBoxContainer"]
+margin_top = 364.0
+margin_right = 426.0
+margin_bottom = 424.0
+rect_min_size = Vector2( 0, 25 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SearchButton" type="TextureButton" parent="Background/VBoxContainer/HBoxContainer"]
+margin_left = 51.0
+margin_right = 211.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 160, 60 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+
+[node name="Label" type="Label" parent="Background/VBoxContainer/HBoxContainer/SearchButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -61.5
+margin_top = -12.0
+margin_right = 61.5
+margin_bottom = 12.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SS1SEARCH"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConnectButton" type="TextureButton" parent="Background/VBoxContainer/HBoxContainer"]
+margin_left = 215.0
+margin_right = 375.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 160, 60 )
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+
+[node name="Label" type="Label" parent="Background/VBoxContainer/HBoxContainer/ConnectButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -61.5
+margin_top = -12.0
+margin_right = 61.5
+margin_bottom = 12.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SS1CONNECT"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="item_selected" from="Background/VBoxContainer/ItemList" to="." method="_on_ItemList_item_selected"]
+[connection signal="pressed" from="Background/VBoxContainer/HBoxContainer/SearchButton" to="." method="_on_SearchButton_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/HBoxContainer/ConnectButton" to="." method="_on_ConnectButton_pressed"]

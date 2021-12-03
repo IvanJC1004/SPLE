@@ -1,0 +1,238 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/UIElements/Image/Shelving/TrophyB1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UIElements/Image/Shelving/TrophyB2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UIElements/Image/Shelving/TrophyB3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UIElements/Image/Shelving/Shelving.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Normal.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Pressed.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Hover.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/MainScenes/Menu/Shelving.gd" type="Script" id=9]
+[ext_resource path="res://Assets/UIElements/Image/ES Flag.png" type="Texture" id=10]
+[ext_resource path="res://Assets/UIElements/Image/Translate Icon.png" type="Texture" id=11]
+[ext_resource path="res://Assets/UIElements/Image/Hover Translate Icon.png" type="Texture" id=12]
+[ext_resource path="res://Assets/UIElements/Image/EN Flag.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/MainScenes/Menu/Translator.gd" type="Script" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 22
+font_data = ExtResource( 1 )
+
+[node name="Shelving" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TrophyB1" type="NinePatchRect" parent="Background"]
+visible = false
+anchor_left = 0.291016
+anchor_top = 0.103333
+anchor_right = 0.369141
+anchor_bottom = 0.288333
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Background/TrophyB1"]
+anchor_left = 0.5
+anchor_top = 0.186
+anchor_right = 0.5
+anchor_bottom = 0.186
+margin_left = -34.2245
+margin_top = -9.94956
+margin_right = 29.7755
+margin_bottom = 6.05044
+custom_fonts/font = SubResource( 1 )
+text = "TROPHYB"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Background/TrophyB1"]
+anchor_left = 0.5
+anchor_top = 0.186
+anchor_right = 0.5
+anchor_bottom = 0.186
+margin_left = -31.8648
+margin_top = 6.09631
+margin_right = 32.1352
+margin_bottom = 22.0963
+custom_fonts/font = SubResource( 1 )
+text = "1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TrophyB2" type="NinePatchRect" parent="Background"]
+visible = false
+anchor_left = 0.376953
+anchor_top = 0.103333
+anchor_right = 0.455078
+anchor_bottom = 0.29
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Background/TrophyB2"]
+anchor_left = 0.477
+anchor_top = 0.16
+anchor_right = 0.477
+anchor_bottom = 0.16
+margin_left = -27.9917
+margin_top = -7.97615
+margin_right = 28.0083
+margin_bottom = 8.02385
+custom_fonts/font = SubResource( 1 )
+text = "TROPHYB"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Background/TrophyB2"]
+anchor_left = 0.477
+anchor_top = 0.16
+anchor_right = 0.477
+anchor_bottom = 0.16
+margin_left = -27.0478
+margin_top = 9.48552
+margin_right = 28.9522
+margin_bottom = 25.4855
+custom_fonts/font = SubResource( 1 )
+text = "2"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TrophyB3" type="NinePatchRect" parent="Background"]
+visible = false
+anchor_left = 0.473907
+anchor_top = 0.102777
+anchor_right = 0.552032
+anchor_bottom = 0.287777
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Background/TrophyB3"]
+anchor_left = 0.51
+anchor_top = 0.171
+anchor_right = 0.51
+anchor_bottom = 0.171
+margin_left = -27.9913
+margin_top = -8.03712
+margin_right = 28.0087
+margin_bottom = 7.96288
+custom_fonts/font = SubResource( 1 )
+text = "TROPHYB"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Background/TrophyB3"]
+anchor_left = 0.51
+anchor_top = 0.171
+anchor_right = 0.51
+anchor_bottom = 0.171
+margin_left = -27.5194
+margin_top = 9.42456
+margin_right = 28.4806
+margin_bottom = 25.4246
+custom_fonts/font = SubResource( 1 )
+text = "3"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CancelButton" type="TextureButton" parent="Background"]
+anchor_left = 0.964
+anchor_top = 0.054
+anchor_right = 0.964
+anchor_bottom = 0.054
+margin_left = -20.5849
+margin_top = -20.3439
+margin_right = 491.415
+margin_bottom = 491.657
+rect_scale = Vector2( 0.08, 0.08 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TranslatorButton" type="TextureButton" parent="Background"]
+anchor_left = 0.91
+anchor_top = 0.047
+anchor_right = 0.91
+anchor_bottom = 0.047
+margin_left = -20.7839
+margin_top = -15.4806
+margin_right = 19.2161
+margin_bottom = 24.5194
+rect_min_size = Vector2( 40, 40 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 12 )
+texture_hover = ExtResource( 12 )
+texture_disabled = ExtResource( 12 )
+expand = true
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TranslatortemList" type="ItemList" parent="Background/TranslatorButton"]
+visible = false
+anchor_left = -1.175
+anchor_top = 1.14
+anchor_right = -1.175
+anchor_bottom = 1.14
+margin_left = -89.9896
+margin_top = -47.4877
+margin_right = 90.0104
+margin_bottom = 47.5123
+rect_min_size = Vector2( 180, 95 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 2 )
+items = [ "Español", ExtResource( 10 ), false, "English", ExtResource( 13 ), false ]
+icon_scale = 0.6
+fixed_icon_size = Vector2( 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Background/CancelButton" to="." method="_on_CancelButton_pressed"]
+[connection signal="pressed" from="Background/TranslatorButton" to="Background/TranslatorButton" method="_on_TextureButton_pressed"]
+[connection signal="item_selected" from="Background/TranslatorButton/TranslatortemList" to="Background/TranslatorButton" method="_on_ItemList_item_selected"]

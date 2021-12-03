@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/crazy-hammond-talk-party-9037.mp3-1060b37d425dc7d0d2f0a6e5739cde6b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Music/crazy-hammond-talk-party-9037.mp3"
+dest_files=[ "res://.import/crazy-hammond-talk-party-9037.mp3-1060b37d425dc7d0d2f0a6e5739cde6b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

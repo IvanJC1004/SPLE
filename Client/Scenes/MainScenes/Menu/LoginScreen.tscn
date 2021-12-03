@@ -1,0 +1,412 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Assets/UIElements/Image/Background Login Image.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/MainScenes/Menu/Warnings.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Fonts/Prolamina/CT ProLamina.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/UIElements/Image/Normal Button.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UIElements/Image/Hover Button.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UIElements/Image/Pressed Button.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/MainScenes/Menu/LoginScreen.gd" type="Script" id=7]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Hover.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Normal.png" type="Texture" id=10]
+[ext_resource path="res://Assets/UIElements/Image/Cancel Pressed.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+outline_size = 4
+outline_color = Color( 0.67451, 0.65098, 0.65098, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 27
+outline_size = 1
+outline_color = Color( 0.67451, 0.65098, 0.65098, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 27
+outline_size = 1
+outline_color = Color( 0.67451, 0.65098, 0.65098, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 35
+outline_size = 1
+outline_color = Color( 0.67451, 0.65098, 0.65098, 1 )
+font_data = ExtResource( 3 )
+
+[node name="LoginScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 0.707108
+margin_bottom = 0.707092
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -212.0
+margin_top = -225.0
+margin_right = 213.0
+margin_bottom = 257.0
+rect_min_size = Vector2( 425, 450 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 31.7629, 359.728, 70.875, 54 )
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 20
+patch_margin_bottom = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoginScreen" type="VBoxContainer" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 15.0
+margin_right = -15.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer Title 0" type="MarginContainer" parent="Background/LoginScreen"]
+margin_right = 395.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Title" type="Label" parent="Background/LoginScreen"]
+margin_top = 24.0
+margin_right = 395.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 0, 20 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1TITLE"
+align = 1
+
+[node name="MarginContainer Title" type="MarginContainer" parent="Background/LoginScreen"]
+margin_top = 67.0
+margin_right = 395.0
+margin_bottom = 87.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="UsernameTitle" type="Label" parent="Background/LoginScreen"]
+margin_top = 91.0
+margin_right = 395.0
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1USERNAMETITLE"
+align = 1
+
+[node name="MarginContainer UserName" type="MarginContainer" parent="Background/LoginScreen"]
+margin_top = 130.0
+margin_right = 395.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Username" type="LineEdit" parent="Background/LoginScreen"]
+margin_top = 144.0
+margin_right = 395.0
+margin_bottom = 193.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="MarginContainer Middle" type="MarginContainer" parent="Background/LoginScreen"]
+margin_top = 197.0
+margin_right = 395.0
+margin_bottom = 217.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="PasswordTitle" type="Label" parent="Background/LoginScreen"]
+margin_top = 221.0
+margin_right = 395.0
+margin_bottom = 256.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1PASSWORDTITLE"
+align = 1
+
+[node name="MarginContainer Password" type="MarginContainer" parent="Background/LoginScreen"]
+margin_top = 260.0
+margin_right = 395.0
+margin_bottom = 270.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Password" type="LineEdit" parent="Background/LoginScreen"]
+margin_top = 274.0
+margin_right = 395.0
+margin_bottom = 323.0
+custom_fonts/font = SubResource( 5 )
+secret = true
+
+[node name="MarginContainer3" type="MarginContainer" parent="Background/LoginScreen"]
+margin_top = 327.0
+margin_right = 395.0
+margin_bottom = 362.0
+rect_min_size = Vector2( 0, 35 )
+
+[node name="LoginButton" type="TextureButton" parent="Background/LoginScreen"]
+margin_left = 87.0
+margin_top = 366.0
+margin_right = 307.0
+margin_bottom = 411.0
+rect_min_size = Vector2( 220, 45 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+
+[node name="Title" type="Label" parent="Background/LoginScreen/LoginButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.707153
+margin_right = -0.707153
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1LOGINBUTTON"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreateAccountButton" type="TextureButton" parent="Background/LoginScreen"]
+margin_left = 87.0
+margin_top = 415.0
+margin_right = 307.0
+margin_bottom = 460.0
+rect_min_size = Vector2( 220, 45 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+
+[node name="Title" type="Label" parent="Background/LoginScreen/CreateAccountButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.707153
+margin_right = -0.707153
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1CREATEBUTTON"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreateAccount" type="VBoxContainer" parent="Background"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_right = -10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Background/CreateAccount"]
+margin_right = 405.0
+margin_bottom = 39.0
+rect_min_size = Vector2( 0, 20 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1CREATEBUTTON"
+align = 1
+
+[node name="MarginContainer Title" type="MarginContainer" parent="Background/CreateAccount"]
+margin_top = 43.0
+margin_right = 405.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 0, 15 )
+
+[node name="UsernameTitle" type="Label" parent="Background/CreateAccount"]
+margin_top = 62.0
+margin_right = 405.0
+margin_bottom = 97.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1USERNAMETITLE"
+align = 1
+
+[node name="MarginContainer UserName" type="MarginContainer" parent="Background/CreateAccount"]
+margin_top = 101.0
+margin_right = 405.0
+margin_bottom = 111.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Username" type="LineEdit" parent="Background/CreateAccount"]
+margin_top = 115.0
+margin_right = 405.0
+margin_bottom = 164.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="MarginContainer Middle" type="MarginContainer" parent="Background/CreateAccount"]
+margin_top = 168.0
+margin_right = 405.0
+margin_bottom = 183.0
+rect_min_size = Vector2( 0, 15 )
+
+[node name="PasswordTitle" type="Label" parent="Background/CreateAccount"]
+margin_top = 187.0
+margin_right = 405.0
+margin_bottom = 222.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1PASSWORDTITLE"
+align = 1
+
+[node name="MarginContainer Password" type="MarginContainer" parent="Background/CreateAccount"]
+margin_top = 226.0
+margin_right = 405.0
+margin_bottom = 236.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Password" type="LineEdit" parent="Background/CreateAccount"]
+margin_top = 240.0
+margin_right = 405.0
+margin_bottom = 289.0
+custom_fonts/font = SubResource( 5 )
+secret = true
+
+[node name="MarginContainer Middle2" type="MarginContainer" parent="Background/CreateAccount"]
+margin_top = 293.0
+margin_right = 405.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 0, 15 )
+
+[node name="RepeatPasswordTitle" type="Label" parent="Background/CreateAccount"]
+margin_top = 312.0
+margin_right = 405.0
+margin_bottom = 347.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L2PASSWORDREPEATTITLE"
+align = 1
+
+[node name="MarginContainer Password2" type="MarginContainer" parent="Background/CreateAccount"]
+margin_top = 351.0
+margin_right = 405.0
+margin_bottom = 361.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="RepeatPassword" type="LineEdit" parent="Background/CreateAccount"]
+margin_top = 365.0
+margin_right = 405.0
+margin_bottom = 414.0
+custom_fonts/font = SubResource( 5 )
+secret = true
+
+[node name="MarginContainer3" type="MarginContainer" parent="Background/CreateAccount"]
+margin_top = 418.0
+margin_right = 405.0
+margin_bottom = 423.0
+rect_min_size = Vector2( 0, 5 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/CreateAccount"]
+margin_top = 427.0
+margin_right = 405.0
+margin_bottom = 472.0
+alignment = 1
+
+[node name="Create" type="TextureButton" parent="Background/CreateAccount/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 200, 45 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+
+[node name="Title" type="Label" parent="Background/CreateAccount/HBoxContainer/Create"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.707153
+margin_right = -0.707153
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L1CREATEBUTTON"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cancel" type="TextureButton" parent="Background/CreateAccount/HBoxContainer"]
+margin_left = 204.0
+margin_right = 404.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 200, 45 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+expand = true
+
+[node name="Title" type="Label" parent="Background/CreateAccount/HBoxContainer/Cancel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.707153
+margin_right = -0.707153
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "L2CANCELBUTTON"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Warnings" parent="." instance=ExtResource( 2 )]
+visible = false
+margin_top = 0.166855
+margin_bottom = 0.16687
+
+[node name="CancelButton" type="TextureButton" parent="Warnings"]
+anchor_left = 0.760972
+anchor_top = 0.260273
+anchor_right = 0.786629
+anchor_bottom = 0.305273
+margin_top = 0.13942
+margin_right = 503.817
+margin_bottom = 510.739
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="Background/LoginScreen/LoginButton" to="." method="_on_LoginButton_pressed"]
+[connection signal="pressed" from="Background/LoginScreen/CreateAccountButton" to="." method="_on_CreateAccountButton_pressed"]
+[connection signal="pressed" from="Background/CreateAccount/HBoxContainer/Create" to="." method="_on_Create_pressed"]
+[connection signal="pressed" from="Background/CreateAccount/HBoxContainer/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="Warnings/CancelButton" to="." method="_on_CancelButton_pressed"]

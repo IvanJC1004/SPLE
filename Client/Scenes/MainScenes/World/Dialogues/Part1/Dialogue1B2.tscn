@@ -1,0 +1,186 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Assets/Fonts/CaviarDreams/CaviarDreams_Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/MainScenes/World/Dialogues/Part1/Dialogue1B2.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Particle1-floaty_64.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Next Indicator Pressed.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/David Chef.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Background Dialog.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Next Indicator Hover.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/David Shadow.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Levels/Basic Restaurant/Dialog/Next Indicator Normal.png" type="Texture" id=9]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 7
+particles_anim_loop = false
+
+[sub_resource type="ParticlesMaterial" id=2]
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 30.0
+flag_disable_z = true
+direction = Vector3( 50, 50, 0 )
+gravity = Vector3( 0, 100, 0 )
+orbit_velocity = 0.01
+orbit_velocity_random = 0.0
+angle = 1.0
+angle_random = 1.0
+anim_speed = 1.0
+
+[sub_resource type="Animation" id=3]
+resource_name = "DavidIDLE"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 419.903, -101.61 ), Vector2( 419.903, -93.028 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.05, 0.05 ), Vector2( 0.08, 0.08 ) ]
+}
+
+[sub_resource type="DynamicFont" id=5]
+size = 40
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=6]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 813.901, 158.808 ), Vector2( 813.901, 165.02 ) ]
+}
+
+[node name="Dialogue" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogBox" type="Control" parent="."]
+anchor_left = 0.514
+anchor_top = 1.0
+anchor_right = 0.514
+anchor_bottom = 1.00068
+margin_left = -431.336
+margin_top = -267.0
+margin_right = 430.664
+margin_bottom = -65.4051
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Effect" type="Particles2D" parent="DialogBox"]
+visible = false
+material = SubResource( 1 )
+position = Vector2( 419.903, -93.2931 )
+scale = Vector2( 1.5, 1.5 )
+process_material = SubResource( 2 )
+texture = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="DialogBox/Effect"]
+wait_time = 1.5
+one_shot = true
+
+[node name="David Chef" type="Sprite" parent="DialogBox"]
+position = Vector2( 419.903, -96.5722 )
+scale = Vector2( 0.08, 0.08 )
+texture = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogBox/David Chef"]
+autoplay = "DavidIDLE"
+anims/DavidIDLE = SubResource( 3 )
+
+[node name="David Shadow" type="Sprite" parent="DialogBox"]
+position = Vector2( 418.049, -31.0408 )
+scale = Vector2( 0.08, 0.08 )
+texture = ExtResource( 8 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogBox/David Shadow"]
+autoplay = "DavidShadowIDLE"
+anims/DavidShadowIDLE = SubResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="DialogBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = 16.0
+margin_right = -24.0
+margin_bottom = -17.0
+mouse_default_cursor_shape = 2
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next Indicator" type="Sprite" parent="DialogBox"]
+position = Vector2( 813.901, 165.02 )
+scale = Vector2( 0.05, 0.05 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogBox/Next Indicator"]
+autoplay = "IDLE"
+anims/IDLE = SubResource( 6 )
+
+[node name="TextureButton" type="TextureButton" parent="DialogBox/Next Indicator"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -293.5
+margin_top = -264.0
+margin_right = -293.5
+margin_bottom = -264.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="DialogBox"]
+
+[connection signal="timeout" from="DialogBox/Effect/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="DialogBox/Next Indicator/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="tween_completed" from="DialogBox/Tween" to="." method="_on_Tween_tween_completed"]
